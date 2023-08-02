@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Webpage</title>
+  <style>
+    /* Reset default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Banner */
+    .banner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .banner img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      display: flex;
+      background-color: black;
+      color: white;
+    }
+
+    .navbar a {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .navbar a:nth-child(1) {
+      background-color: white;
+      color: black;
+    }
+
+    .navbar a:nth-child(2) {
+      background-color: gold;
+    }
+
+    .navbar a:nth-child(3) {
+      background-color: red;
+    }
+
+    /* Introduction Block */
+    .introduction {
+      border:thick solid black;
+      border-radius: 5px;
+      padding: 20px;
+      display: flex;
+    }
+
+    .introduction img {
+      width: 200px;
+      height: 200px;
+      margin-right: 20px;
+    }
+
+    /* Blogposts Block */
+    .blogposts {
+      margin-top: 20px;
+    }
+
+    /* Bottom Bar */
+    .bottom-bar {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="banner">
+    <img src="comik.png" alt="Banner Image">
+  </div>
+
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <div class="introduction">
+    <img src="comik.png" alt="Introduction Image">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in gravida elit, a iaculis mauris. Sed
+      consectetur libero in quam ultricies, vel tincidunt erat ultricies. Nulla facilisi. Fusce consectetur
+      tortor vel efficitur venenatis. </p>
+  </div>
+
+  <div class="blogposts">
+    <h2>Blog Posts</h2>
+    <div class="blogpost">
+      <h3>Blog Post 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in gravida elit, a iaculis mauris. Sed
+        consectetur libero in quam ultricies, vel tincidunt erat ultricies.</p>
+    </div>
+    <div class="blogpost">
+      <h3>Blog Post 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in gravida elit, a iaculis mauris. Sed
+        consectetur libero in quam ultricies, vel tincidunt erat ultricies.</p>
+    </div>
+  </div>
+
+  <div class="bottom-bar">
+    &copy; 2022 Your Website. All rights reserved. Licensed under GPL.
+  </div>
+</body>
+
+</html>
